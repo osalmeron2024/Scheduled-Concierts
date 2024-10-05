@@ -1,0 +1,320 @@
+@font-face {
+  font-family: "New Rocker";
+  src: url(../fonts/NewRocker-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: 0.1em solid crimson; */
+
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+html {
+  height: auto;
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient(to top left, #282a3a, #000000, #0f0e0e);
+  /* max-height: 100%; */
+}
+
+.headerFlex {
+  width: 60%;
+  overflow: hidden;
+  background: linear-gradient(to right, #1e201e, #0c0c0c, #3c3d37);
+  border-radius: 7px;
+  padding: 0.5em 0em;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.headerFlex > div:last-child {
+  align-self: flex-end;
+}
+
+.headerFlex > div h1 {
+  font-family: "New Rocker";
+  font-size: 1.6em;
+  color: #e7f6f2;
+  text-align: center;
+}
+
+.headerFlex > div p {
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #eeeeee;
+}
+
+.headerFlex > div #fecha {
+  font-size: 0.9em;
+  color: #b9b4c7;
+  padding-right: 0.3em;
+}
+
+.headerFlex > div #dia {
+  padding-right: 0.1em;
+  color: #b9b4c7;
+}
+
+.headerFlex > div #hora {
+  padding-right: 2em;
+  color: #b9b4c7;
+}
+
+.flexConciertos {
+  /* border: 1px solid tomato; */
+  width: 60%;
+  margin: 0rem auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  justify-content: center;
+}
+
+.flexConciertos > .sectionConciertos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.U2 {
+  border-radius: 7px;
+  height: 200px;
+  background-image: url(../imagenes/U2.jpeg);
+  resize: both;
+  background-repeat: round;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ironMaiden {
+  border-radius: 7px;
+  height: 200px;
+  background-image: url(../imagenes/IronMaiden.jpeg);
+  resize: both;
+  background-repeat: round;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.metallica {
+  border-radius: 10px;
+  height: 200px;
+  background-image: url(../imagenes/Metallica.jpg);
+  resize: both;
+  background-repeat: round;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Nightwish {
+  border-radius: 10px;
+  height: 200px;
+  background-image: url(../imagenes/Nightwish.jpeg);
+  resize: both;
+  background-repeat: round;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.withinTemptation {
+  height: 200px;
+  border-radius: 10px;
+  background-image: url(../imagenes/WithinTemptation.jpeg);
+  resize: both;
+  background-repeat: round;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gunsRoses {
+  height: 200px;
+  border-radius: 10px;
+  background-image: url(../imagenes/GunsAndRoses.jpeg);
+  resize: both;
+  background-repeat: round;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sectionBanner {
+  height: 400px;
+  margin-bottom: 1%;
+  border-radius: 10px;
+  background-image: url(../imagenes/banner.jpg);
+  resize: both;
+  background-repeat: round;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+
+.flexConciertos > .sectionConciertos p {
+  font-family: Roboto;
+  color: #dbcbbd;
+  background-color: #0f0e0e;
+  font-size: 0.8em;
+  border-radius: 5px;
+}
+
+.sectionBanner > div p {
+  font-family: Roboto;
+  color: burlywood;
+  font-weight: bold;
+}
+
+span {
+  color: white;
+  background-color: #003f5c;
+}
+
+.btnfos {
+  color: #ffffffcb;
+  cursor: pointer;
+  display: block;
+  font-size: 0.8em;
+  font-weight: bold;
+  line-height: 30px;
+  max-width: 250px;
+  margin: 0 auto 0em;
+  position: relative;
+  text-transform: uppercase;
+  /* vertical-align: middle; */
+  width: 100%;
+  padding: 0px 8px;
+  text-align: center;
+}
+
+.btnfos-1 {
+  background: #e94560;
+  font-weight: bold;
+}
+.btnfos-1 svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30px;
+}
+.btnfos-1 rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1;
+  stroke-dasharray: 422, 0;
+}
+
+.btnfos-1:hover {
+  background: rgba(225, 51, 45, 0);
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+.btnfos-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 60, 400;
+  stroke-dashoffset: 65;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.copy-Right{
+  width: 53%;
+  background: linear-gradient(to right, #0c0c0c, #1e201e, #0c0c0c);
+  font-family: Roboto;
+  font-size: small;
+  color: darkgray;
+  margin: 1rem auto;  
+  border-radius: 7px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.spaceCodyBy{
+  padding-bottom: 6px;
+}
+
+/* Responsive media query */
+@media screen and (min-width: 850px) {
+  .headerFlex {
+    width: 90%;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .headerFlex > div h1 {
+    font-family: "New Rocker";
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #e7f6f2;
+  }
+
+  .headerFlex > div:last-child {
+    /* border: 1px solid burlywood; */
+    align-self: self-start;
+  }
+
+  .headerFlex > div:first-child {
+    padding-left: 3.5rem;   
+  }
+
+  .flexConciertos {
+    width: 90%;
+    flex-direction: row;
+    gap: 0.8rem;
+  }
+
+  .flexConciertos > .sectionConciertos {
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .flexConciertos > .sectionConciertos div {
+    flex-basis: 32%;
+  }
+
+  .flexConciertos > .sectionBanner {
+    width: 25%;
+    margin-bottom: 0;
+    height: 417px;
+  }
+
+  .copy-Right{    
+    width: 88%;
+  }
+}
